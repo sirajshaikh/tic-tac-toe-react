@@ -1,0 +1,220 @@
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.title span {
+  color: #26ffcb;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.player-info-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.player-info {
+  text-align: center;
+  flex: 1;
+  margin: 0 15px;
+}
+
+.player-info h3 {
+  color: #26ffcb;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.player-status {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #888;
+}
+
+.player-status.active {
+  color: #26ffcb;
+}
+
+.game-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.game-board {
+  flex: 1;
+  max-width: 500px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border: 3px solid #26ffcb;
+  border-radius: 10px;
+  background-color: #323b3f;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boxes:hover {
+  background-color: #26ffcb;
+  color: #538195;
+}
+
+.boxes.filled {
+  background-color: #444;
+  cursor: not-allowed;
+}
+
+.game-controls {
+  flex: 1;
+  text-align: center;
+  max-width: 300px;
+}
+
+.winner-message {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #26ffcb;
+}
+
+.restart-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #26ffcb;
+  color: #323b3f;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.restart-button:hover {
+  background-color: #1ed9a5;
+}
+
+.game-moves {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.game-moves h4 {
+  color: #26ffcb;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.game-moves ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.game-moves li {
+  margin-bottom: 8px;
+}
+
+.move-btn {
+  background: none;
+  border: none;
+  color: #26ffcb;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.move-btn:hover {
+  color: #1ed9a5;
+}
+
+
+.player-info-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #323b3f;
+  border-radius: 10px;
+  border: 2px solid #26ffcb;
+  max-width: 200px;
+}
+
+.player-info h6 {
+  font-size: 1.1rem;
+  color: #26ffcb;
+  margin-bottom: 10px;
+}
+
+.name-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #26ffcb;
+  background-color: #444;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.name-input:focus {
+  outline: none;
+  border-color: #1ed9a5;
+}
+
+.player-status {
+  font-size: 1rem;
+  color: #888;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.player-status.active {
+  background-color: #26ffcb;
+  color: #323b3f;
+  font-weight: bold;
+}
+
+.player-status:not(.active) {
+  background-color: #555;
+  color: #bbb;
+}
+
+@media (max-width: 768px) {
+  .player-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
